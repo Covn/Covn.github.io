@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Nanum+Gothic:wght@700&display=swap');
+html, 
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow: hidden;
+}
+
+:root {
+  --v1: #212424;
+  --v2: #e1b919;
+  --v3: #A5C9CA;
+  --v4: #E7F6F2;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: var(--v1);
+    background: var(--v4);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input {
+  outline: none;
+  border: none;
+  z-index: 2;
+  position: relative;
+  align-items: center;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--v1);
+  background-color: var(--v4);
+  border-radius: 5px;
+  margin: 10px 0px 0px;
+  padding: 5px;
+  width: 100%;
+  height: 50px;
+}
+
+hr {
+  border: none;
+  border-top: 1px dashed #212424aa;
+  background-color: var(--v4);
+  height: 1px;
+  width: 50%;
+}
+
+/* section::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  z-index: -1;
+} */
+
+section {
+  font-family: 'Nanum Gothic';
+  font-size: x-large;
+  position: absolute;
+  width: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  padding: 10px;
+}
+
+form input, form hr, form h2{
+  /* position: absolute; */
+  margin-left: 25%;
+  margin-right: 25%;
+  color: var(--v1);
+  padding: 0px 10px 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--v4);
+  position: relative;
+  z-index: 1;
+}
+
+form yay {
+  font-family: 'Nanum Gothic';
+  font-size: x-large;
+  position: absolute;
+  width: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  background-color: var(--v2);
+  margin: 50px;
+  z-index: 0;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 2em;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-right: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+button:hover {
+  transform: translateY(-20px);
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 100%;
+  background: rgba(255,255,255,0.3);
+  transform: skewX(45deg) translateX(300px);
+  transition: 0.4s;
+}
+
+button:hover::before {
+  transform: skewX(45deg) translateX(-250px);
+}
